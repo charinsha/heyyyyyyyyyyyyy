@@ -51,7 +51,7 @@ class ImageApp(QMainWindow):
 
         self.canvas = QLabel("Откройте изображение")
         self.canvas.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.canvas.setStyleSheet("background: white; color: gray; font-size: 16px;")
+        self.canvas.setStyleSheet("background: dimgray; color: white; font-size: 16px;")
         self.canvas.setMinimumSize(1, 1)
 
         scroll = QScrollArea()
@@ -105,7 +105,7 @@ class ImageApp(QMainWindow):
             self,
             "Сохранить изображение",
             "",
-            "PNG (*.png);;PBM (*.pbm);;PPM (*.ppm)",
+            "PNG (*.png);;PBM (*.pbm);",
         )
         if not filename:
             return
